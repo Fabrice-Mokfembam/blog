@@ -1,0 +1,96 @@
+@import "../../../index.scss";
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $background-color;
+}
+
+.login-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 85vh;
+gap: 1.4rem;
+  width: 100%;
+
+  @media screen and (max-width: 500px) {
+    min-height: 100vh;
+    
+  }
+}
+
+.login-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  color: $primary-color;
+  margin-bottom: 1.5rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login-input {
+  padding: 0.8rem;
+  border: 1px solid $secondary-color;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+
+  &:focus {
+    border-color: $primary-color;
+    outline: none;
+  }
+}
+
+.login-button {
+  background-color: $primary-color;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.login-message {
+  margin-top: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  color: $text-color;
+}
+
+.login-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  .icon {
+    font-size: 1.5rem;
+    color: $secondary-color;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

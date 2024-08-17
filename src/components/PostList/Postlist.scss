@@ -1,0 +1,18 @@
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    margin-top: 20px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+        padding: 1rem;
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
