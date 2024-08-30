@@ -14,7 +14,7 @@ import { db } from "./config/DB";
 function App() {
   const [blogs, setBlogs] = useState([]);
 
-  useEffect(() => {
+   useEffect(() => {
     getAllBlogs();
 
      
